@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases for https://www.saucedemo.com/</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2F4F4F;
+        }
+        h2 {
+            color: #4682B4;
+        }
+        h3 {
+            color: #2E8B57;
+        }
+        .test-case {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .test-case p {
+            margin: 5px 0;
+        }
+        .test-case ul {
+            margin: 5px 0 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Cases for https://www.saucedemo.com/</h1>
+    <h2>1. Login Functionality</h2>
+    <div class="test-case">
+        <h3>Test Case 1.1: Valid Login</h3>
+        <p><strong>Description:</strong> Verify successful login with valid credentials.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter valid username: <code>standard_user</code>.</li>
+            <li>Enter valid password: <code>secret_sauce</code>.</li>
+            <li>Click on the <code>Login</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the inventory page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 1.2: Invalid Username</h3>
+        <p><strong>Description:</strong> Verify login fails with an invalid username.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter invalid username: <code>invalid_user</code>.</li>
+            <li>Enter valid password: <code>secret_sauce</code>.</li>
+            <li>Click on the <code>Login</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Error message "Username and password do not match any user in this service" is displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 1.3: Invalid Password</h3>
+        <p><strong>Description:</strong> Verify login fails with an invalid password.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter valid username: <code>standard_user</code>.</li>
+            <li>Enter invalid password: <code>invalid_password</code>.</li>
+            <li>Click on the <code>Login</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Error message "Username and password do not match any user in this service" is displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 1.4: Empty Fields</h3>
+        <p><strong>Description:</strong> Verify login fails with empty username and password fields.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Leave the username field empty.</li>
+            <li>Leave the password field empty.</li>
+            <li>Click on the <code>Login</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Error message "Username is required" is displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 1.5: Special Characters in Username and Password</h3>
+        <p><strong>Description:</strong> Verify login behavior with special characters in username and password.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter special characters in username: <code>!@#$%^&*()</code>.</li>
+            <li>Enter special characters in password: <code>!@#$%^&*()</code>.</li>
+            <li>Click on the <code>Login</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Error message "Username and password do not match any user in this service" is displayed.</p>
+    </div>
+
+    <h2>2. Inventory Page</h2>
+    <div class="test-case">
+        <h3>Test Case 2.1: Verify Product Display</h3>
+        <p><strong>Description:</strong> Verify all products are displayed correctly on the inventory page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Check the display of each product.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Each product should display name, description, price, and an <code>Add to Cart</code> button.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.2: Sort Products by Name Ascending</h3>
+        <p><strong>Description:</strong> Verify sorting products by name in ascending order.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Select "Name (A to Z)" from the sorting dropdown.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Products are sorted by name in ascending order.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.3: Sort Products by Name Descending</h3>
+        <p><strong>Description:</strong> Verify sorting products by name in descending order.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Select "Name (Z to A)" from the sorting dropdown.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Products are sorted by name in descending order.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.4: Sort Products by Price Low to High</h3>
+        <p><strong>Description:</strong> Verify sorting products by price from low to high.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Select "Price (low to high)" from the sorting dropdown.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Products are sorted by price from low to high.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.5: Sort Products by Price High to Low</h3>
+        <p><strong>Description:</strong> Verify sorting products by price from high to low.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Select "Price (high to low)" from the sorting dropdown.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Products are sorted by price from high to low.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.6: Add Product to Cart</h3>
+        <p><strong>Description:</strong> Verify adding a product to the cart.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Add to Cart</code> button for a product.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> The product count in the cart updates correctly, and the button changes to <code>Remove</code>.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 2.7: Create duplicate session's and logout from one and reload the second</h3>
+        <p><strong>Description:</strong> Verify by openning/duplicate the same page in second tab in the browser and validate the session in second page by logging out in first session </p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Open the Sauce Demo website and log in.</li>
+            <li>Duplicate the browser tab. </li>
+            <li>In the new tab, log out.</li>
+            <li>Verify that the session in the new tab is logged out.</li>
+            <li>Go back to the original tab and reload the page.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Error message indicating the session has expired. <code>You can only access '/inventory.html' when you are logged in.</code></p>
+    </div>
+    <h2>3. Shopping Cart</h2>
+    <div class="test-case">
+        <h3>Test Case 3.1: View Cart</h3>
+        <p><strong>Description:</strong> Verify the user can view the shopping cart.</p>
+        <p><strong>Preconditions:</strong> User is logged in and has added products to the cart.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the cart icon.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the cart page where added products are displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 3.2: Remove Product from Cart</h3>
+        <p><strong>Description:</strong> Verify the user can remove a product from the cart.</p>
+        <p><strong>Preconditions:</strong> User is logged in and has products in the cart.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Remove</code> button next to a product in the cart.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> The product is removed from the cart, and the cart count updates correctly.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 3.3: Continue Shopping</h3>
+        <p><strong>Description:</strong> Verify the user can return to the inventory page from the cart.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the cart page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Continue Shopping</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected back to the inventory page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 3.4: Proceed to Checkout</h3>
+        <p><strong>Description:</strong> Verify the user can proceed to the checkout page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and has products in the cart.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Checkout</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the checkout information page.</p>
+    </div>
+
+    <h2>4. Checkout Process</h2>
+    <div class="test-case">
+        <h3>Test Case 4.1: Fill in Checkout Information</h3>
+        <p><strong>Description:</strong> Verify the user can fill in the checkout information.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the checkout information page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter first name, last name, and postal code.</li>
+            <li>Click on the <code>Continue</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the checkout overview page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 4.2: Complete the Purchase</h3>
+        <p><strong>Description:</strong> Verify the user can complete the purchase.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the checkout overview page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Finish</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the order confirmation page, and a success message is displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 4.3: Cancel Checkout</h3>
+        <p><strong>Description:</strong> Verify the user can cancel the checkout process.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the checkout overview page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the <code>Cancel</code> button.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected back to the cart page.</p>
+    </div>
+    <h2>5. User Experience</h2>
+    <div class="test-case">
+        <h3>Test Case 5.1: Verify Navigation Links</h3>
+        <p><strong>Description:</strong> Verify all navigation links function correctly.</p>
+        <p><strong>Preconditions:</strong> User is logged in.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on each navigation link (Home, Inventory, Cart, Logout).</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Each link redirects to the correct page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 5.2: Responsive Design on Desktop</h3>
+        <p><strong>Description:</strong> Verify website responsiveness on a desktop.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Resize the browser window to various desktop resolutions.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> The layout and functionality remain consistent and readable.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 5.3: Responsive Design on Tablet</h3>
+        <p><strong>Description:</strong> Verify website responsiveness on a tablet.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Open the website on a tablet device.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> The layout and functionality remain consistent and readable.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 5.4: Responsive Design on Mobile</h3>
+        <p><strong>Description:</strong> Verify website responsiveness on a mobile device.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Open the website on a mobile device.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> The layout and functionality remain consistent and readable.</p>
+    </div>
+    <h2>6. Logout Functionality</h2>
+    <div class="test-case">
+        <h3>Test Case 6.1: Logout</h3>
+        <p><strong>Description:</strong> Verify the user can log out.</p>
+        <p><strong>Preconditions:</strong> User is logged in.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 6.2: Logout from Inventory Page</h3>
+        <p><strong>Description:</strong> Verify the user can log out from the inventory page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the inventory page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button (hamburger icon) in the top-left corner.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 6.3: Logout from Cart Page</h3>
+        <p><strong>Description:</strong> Verify the user can log out from the cart page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the cart page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button (hamburger icon) in the top-left corner.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 6.4: Logout from Checkout Information Page</h3>
+        <p><strong>Description:</strong> Verify the user can log out from the checkout information page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the checkout information page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button (hamburger icon) in the top-left corner.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 6.5: Logout from Checkout Overview Page</h3>
+        <p><strong>Description:</strong> Verify the user can log out from the checkout overview page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the checkout overview page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button (hamburger icon) in the top-left corner.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 6.6: Logout from Order Confirmation Page</h3>
+        <p><strong>Description:</strong> Verify the user can log out from the order confirmation page.</p>
+        <p><strong>Preconditions:</strong> User is logged in and on the order confirmation page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Click on the menu button (hamburger icon) in the top-left corner.</li>
+            <li>Select <code>Logout</code> from the menu options.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is redirected to the login page.</p>
+    </div>
+    <h2>7. Security and Accessibility</h2>
+    <div class="test-case">
+        <h3>Test Case 7.1: Session Timeout</h3>
+        <p><strong>Description:</strong> Verify session timeout functionality.</p>
+        <p><strong>Preconditions:</strong> User is logged in.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Leave the session idle for the configured timeout period.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User is logged out, and a message is displayed indicating session timeout.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 7.2: Accessibility with Screen Reader</h3>
+        <p><strong>Description:</strong> Verify website accessibility with a screen reader.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enable a screen reader and navigate through the website..</li>
+        </ul>
+        <p><strong>Expected Result:</strong> All elements are accessible, and appropriate labels are read by the screen reader.</p>
+    </div>
+    <h2>8. Performance</h2>
+    <div class="test-case">
+        <h3>Test Case 8.1: Page Load Time</h3>
+        <p><strong>Description:</strong> Verify page load times under normal conditions.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Measure the time taken for each page to load.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Pages load within a reasonable timeframe (e.g., less than 3 seconds).</p>
+    </div>
+    <h2>9. Edge Cases</h2>
+    <div class="test-case">
+        <h3>Test Case 9.1: Unsupported Browser</h3>
+        <p><strong>Description:</strong> Verify website behavior on an unsupported browser.</p>
+        <p><strong>Preconditions:</strong> User is on the website using an unsupported browser.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Open the website on an outdated or unsupported browser version.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Appropriate error messages or fallback options are displayed.</p>
+    </div>
+    <div class="test-case">
+        <h3>Test Case 9.2: Unexpected Input Formats</h3>
+        <p><strong>Description:</strong> Verify handling of unexpected input formats.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter unexpected input formats (e.g., script tags, SQL injection attempts) in input fields.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Inputs are sanitized, and no security vulnerabilities are exploited.</p>
+    </div>
+    <h2>10.Localization and Internationalization</h2>
+    <div class="test-case">
+        <h3>Test Case 10.1: Language Support</h3>
+        <p><strong>Description:</strong> Verify switching between different languages (if supported).</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Switch the website language (if language options are available).</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Translations are accurate, and all content remains functional.</p>
+    </div>
+    <h2>11.Browser Compatibility</h2>
+    <div class="test-case">
+        <h3>Test Case 11.1: Cross-Browser Testing</h3>
+        <p><strong>Description:</strong> Verify website functionality on different browsers.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Open the website on different browsers (Chrome, Firefox, Edge, Safari).</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Consistent behavior and appearance across browsers.</p>
+    </div>
+    <h2>12.User Feedback</h2>
+    <div class="test-case">
+        <h3>Test Case 12.1: Error Handling for Incorrect URLs</h3>
+        <p><strong>Description:</strong> Verify behavior for incorrect URLs.</p>
+        <p><strong>Preconditions:</strong> User is on the website.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter incorrect URLs or navigate to non-existent pages.</li>
+        </ul>
+        <p><strong>Expected Result:</strong> Appropriate error messages or redirects are displayed.</p>
+    </div>
+     <h2>End-to-End Scenario</h2>
+    <div class="test-case">
+        <h3>Test Case E2E-1: Full Purchase Flow</h3>
+        <p><strong>Description:</strong> Verify the complete purchase flow from login to logout.</p>
+        <p><strong>Preconditions:</strong> User is on the login page.</p>
+        <p><strong>Steps:</strong></p>
+        <ul>
+            <li>Enter valid username: <code>standard_user</code></li>
+            <li>Enter valid password: <code>secret_sauce</code></li>
+            <li>Click on the <code>Login</code> button</li>
+            <li>Verify the user is redirected to the inventory page</li>
+            <li>Add a few items to the cart</li>
+            <li>Click on the cart icon</li>
+            <li>Verify the user is redirected to the cart page</li>
+            <li>Click on the <code>Checkout</code> button</li>
+            <li>Fill in the checkout information (First Name, Last Name, Postal Code)</li>
+            <li>Click on the <code>Continue</code> button</li>
+            <li>Verify the user is redirected to the checkout overview page</li>
+            <li>Click on the <code>Finish</code> button</li>
+            <li>Verify the user is redirected to the order confirmation page, and a success message is displayed</li>
+            <li>Click on the menu button (hamburger icon)</li>
+            <li>Select <code>Logout</code> from the menu options</li>
+            <li>Verify the user is redirected to the login page</li>
+        </ul>
+        <p><strong>Expected Result:</strong> User can successfully complete a purchase from login to logout, with appropriate redirects and confirmations at each step.</p>
+    </div>
+</body>
+</html>
