@@ -58,5 +58,11 @@ mvn clean test
 ```
 The tests are configured to run using TestNG, as defined in the testng.xml file.
 
+## View Test Reports
+You can view your test suite execution for playwright in the following directory in file
+
+```sh
+target/surefire-reports/index.html
+```
 
 
