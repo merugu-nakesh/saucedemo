@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="29.777" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/nakesh.merugu/eCommProject/saucedemo/target/test-classes:/Users/nakesh.merugu/eCommProject/saucedemo/target/classes:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/playwright/1.13.0/playwright-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/nakesh.merugu/.m2/repository/org/java-websocket/Java-WebSocket/1.5.1/Java-WebSocket-1.5.1.jar:/Users/nakesh.merugu/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/driver/1.13.0/driver-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/driver-bundle/1.13.0/driver-bundle-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/nakesh.merugu/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/nakesh.merugu/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-testng/2.13.8/allure-testng-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-java-commons/2.13.8/allure-java-commons-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-model/2.13.8/allure-model-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/org/apache/tika/tika-core/1.24.1/tika-core-1.24.1.jar:/Users/nakesh.merugu/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/nakesh.merugu/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/nakesh.merugu/eCommProject/saucedemo/target/surefire/surefirebooter17978559004407157738.jar /Users/nakesh.merugu/eCommProject/saucedemo/target/surefire 2024-06-25T17-29-48_927-jvmRun1 surefire16505684775096472670tmp surefire_08166538132607188809tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/nakesh.merugu/eCommProject/saucedemo/target/test-classes:/Users/nakesh.merugu/eCommProject/saucedemo/target/classes:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/playwright/1.13.0/playwright-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/nakesh.merugu/.m2/repository/org/java-websocket/Java-WebSocket/1.5.1/Java-WebSocket-1.5.1.jar:/Users/nakesh.merugu/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/driver/1.13.0/driver-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/com/microsoft/playwright/driver-bundle/1.13.0/driver-bundle-1.13.0.jar:/Users/nakesh.merugu/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/nakesh.merugu/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/nakesh.merugu/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-testng/2.13.8/allure-testng-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-java-commons/2.13.8/allure-java-commons-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/io/qameta/allure/allure-model/2.13.8/allure-model-2.13.8.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/nakesh.merugu/.m2/repository/org/apache/tika/tika-core/1.24.1/tika-core-1.24.1.jar:/Users/nakesh.merugu/.m2/repository/org/jooq/joor-java-8/0.9.13/joor-java-8-0.9.13.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/nakesh.merugu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="/Users/nakesh.merugu/Library/Java/JavaVirtualMachines/openjdk-17.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/nakesh.merugu/eCommProject/saucedemo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/nakesh.merugu/eCommProject/saucedemo/target/surefire/surefirebooter17978559004407157738.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8-86"/>
+    <property name="user.name" value="nakesh.merugu"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/nakesh.merugu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/qc/qr0t8ht15tn8knrxhmbpq4y00000gr/T/"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="/Users/nakesh.merugu/eCommProject/saucedemo"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/nakesh.merugu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.2+8-86"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testInvalidLogin" classname="com.examples.tests.LoginTest" time="0.251"/>
+  <testcase name="testValidLogin" classname="com.examples.tests.LoginTest" time="0.495"/>
+  <testcase name="testAddToCart" classname="com.examples.tests.CartTest" time="0.29"/>
+  <testcase name="testRemoveFromCart" classname="com.examples.tests.CartTest" time="0.377"/>
+  <testcase name="testCheckoutForm" classname="com.examples.tests.CheckoutTest" time="0.911"/>
+</testsuite>

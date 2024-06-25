@@ -1,0 +1,8 @@
+com/examples/tests/LoginTest.class
+org/example/Main.class
+com/examples/utils/ReportManager.class
+com/examples/tests/CartTest.class
+com/examples/tests/SampleTest.class
+com/examples/tests/BaseTest.class
+com/examples/pages/BasePage.class
+com/examples/tests/CheckoutTest.class
